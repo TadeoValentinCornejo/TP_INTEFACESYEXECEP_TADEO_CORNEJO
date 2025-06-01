@@ -1,13 +1,24 @@
-package Ejercicio_2;
+package Ejercicio_6;
 
-public class Ejercicio_2_ejecutable {
+import java.util.Scanner;
+
+public class Ejercicio_6_ejecutable {
     public static void main(String[] args) {
-        Cliente cliente = new Cliente("pepe","gomez",19,"BARRIO GENERICO");
+        Scanner sc = new Scanner(System.in);
+        Cliente cliente = new Cliente("pepe","gomez",40,"BARRIO GENERICO");
         Producto producto = new Producto(42,4.99,"Leche");
         Factura factura = new Factura(4.99,cliente);
-
+        int edad;
         factura.imprimir();
         producto.imprimir();
         cliente.imprimir();
+        System.out.println("Ingrese la edad del cliente: ");
+        edad = sc.nextInt();
+        cliente.ingresarEdad(edad);
+
+
+
+
+
     }
 }

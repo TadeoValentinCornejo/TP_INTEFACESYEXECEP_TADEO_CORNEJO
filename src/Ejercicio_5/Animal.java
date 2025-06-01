@@ -1,4 +1,6 @@
 package Ejercicio_5;
 
-public class Animal {
+public interface Animal {
+
+    public void hacerRuido();
 }

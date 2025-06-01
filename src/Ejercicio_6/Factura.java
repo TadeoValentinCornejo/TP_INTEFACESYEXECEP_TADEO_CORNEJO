@@ -1,6 +1,6 @@
-package Ejercicio_2;
+package Ejercicio_6;
 
-public class Factura implements Imprimible{
+public class Factura implements Imprimible {
     private double total;
     private Cliente cliente;
 

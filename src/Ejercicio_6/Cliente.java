@@ -1,6 +1,6 @@
-package Ejercicio_2;
+package Ejercicio_6;
 
-public class Cliente implements Imprimible{
+public class Cliente implements Imprimible {
     private String nombre;
     private String apellido;
     private int edad;
@@ -63,5 +63,11 @@ public class Cliente implements Imprimible{
                 ", edad=" + edad +
                 ", direccion='" + direccion + '\'' +
                 '}';
+    }
+
+    public int ingresarEdad(int edad) {
+        if (edad < 0) throw new EdadIvalidaException("La edada que usted ingreso es negativa, por lo tanto es invalida");
+        if (edad > 30) throw new EdadIvalidaException("La edad que usted ingreso es mayor que 30, por lo tanto es invalida");
+        return edad;
     }
 }

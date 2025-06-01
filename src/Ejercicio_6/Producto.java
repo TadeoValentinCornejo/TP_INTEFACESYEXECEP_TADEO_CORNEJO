@@ -1,6 +1,6 @@
-package Ejercicio_2;
+package Ejercicio_6;
 
-public class Producto implements Imprimible{
+public class Producto implements Imprimible {
     private int ID;
     private double precio;
     private String nombre;
