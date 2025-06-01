@@ -9,7 +9,7 @@ public class Ejercicio_9_ejecutable {
     public static void main(String[] args) {
         BufferedReader br = null;
         try {
-            br = new BufferedReader(new FileReader("C:\\Users\\valen\\OneDrive\\Escritorio\\Segundo semestre programacion\\programacion II Java\\TP_INTEFACESYEXECEP_TADEO_CORNEJO\\src\\Ejercicio_9\\oracion.txt"));
+            br = new BufferedReader(new FileReader("oracion.txt"));
             String linea;
 
             while((linea = br.readLine()) != null){
